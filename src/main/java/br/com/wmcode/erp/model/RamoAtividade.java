@@ -2,6 +2,7 @@ package br.com.wmcode.erp.model;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tbl_ramo_atividade")
+@Table(name = "ramo_atividade")
 public class RamoAtividade implements Serializable{
 
 	/**
@@ -21,7 +22,7 @@ public class RamoAtividade implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	
+	@Column(nullable = false, length = 80)
 	private String descricao;
 
 
