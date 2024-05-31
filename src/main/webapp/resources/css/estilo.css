@@ -8,11 +8,14 @@ body {
 }
 
 header {
-	width: auto;
+	padding: 10px;
 	margin-bottom: 20px;
 	height: 30px;
 	background-color: #545454;
 	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
 	box-shadow: 0px 2px 2px #ccc
 }
 
